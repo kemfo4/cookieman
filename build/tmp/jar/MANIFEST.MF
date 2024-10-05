@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: cookieman
+Specification-Vendor: Kemfo4
+Specification-Version: 1
+Implementation-Title: cookieman
+Implementation-Version: 0.4.0
+Implementation-Vendor: Kemfo4
+Implementation-Timestamp: 2024-09-15T08:31:05+0200
+

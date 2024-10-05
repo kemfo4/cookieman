@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "cookieman:block/cookie_dirt",
+    "down": "cookieman:block/cookie_grass_block/cookie_grass_block_down",
+    "up": "cookieman:block/cookie_grass_block/cookie_grass_block_up",
+    "north": "cookieman:block/cookie_grass_block/cookie_grass_block_front",
+    "east": "cookieman:block/cookie_grass_block/cookie_grass_block_front",
+    "south": "cookieman:block/cookie_grass_block/cookie_grass_block_front",
+    "west": "cookieman:block/cookie_grass_block/cookie_grass_block_front"
+  }
+}

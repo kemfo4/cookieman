@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.oreoman.idle": {
+			"loop": true,
+			"animation_length": 0.125,
+			"start_delay": "5000",
+			"bones": {
+				"eyesclos": {
+					"rotation": {
+						"0.0": {
+							"vector": [-7.5, 0, 0]
+						},
+						"0.125": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"eyesopen": {
+					"position": {
+						"0.0417": {
+							"vector": [0, -2, 0]
+						},
+						"0.0833": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		}
+	}
+}
