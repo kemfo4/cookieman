@@ -1,5 +1,10 @@
 {
-  "item.cookieman.gold_cookie":"Gold Cookie",
-  "block.cookieman.cookie_grass_block":"Cookie Grass Block",
-  "block.cookieman.cookie_dirt":"Cookie Dirt"
+  "item.cookieman.gold_cookie":"Zlote Ciastko",
+  "block.cookieman.cookie_grass_block":"Ciasteczkowy Blok Trawy",
+  "block.cookieman.cookie_dirt":"Ciasteczkowa Ziemia",
+  "item.cookieman.cookie_sword":"Ciasteczkowy Miecz",
+  "item.cookieman.cookie_pickaxe":"Ciastezckowy Kilof",
+  "item.cookieman.cookie_shovel":"Ciasteczkowa Łopata",
+  "item.cookieman.cookie_axe":"Ciasteczkowa Siekiera",
+  "item.cookieman.cookie_hoe":"Ciasteczkowa Motyka"
 }
