@@ -7,5 +7,7 @@
   "item.cookieman.cookie_shovel":"Cookie Shovel",
   "item.cookieman.cookie_axe":"Cookie Axe",
   "item.cookieman.cookie_hoe":"Cookie Hoe",
-  "item.cookieman.macaroons":"Macaroons"
+  "item.cookieman.macaroons":"Macaroons",
+  "item.cookieman.raw_cookie_ingot":"Raw cookie ingot",
+  "item.cookieman.cookie_ingot":"Cookie ingot"
 } 
