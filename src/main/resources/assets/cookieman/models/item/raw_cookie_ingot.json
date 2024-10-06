@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cookieman:item/raw_cookie_ingot"
+  }
+}
