@@ -12,15 +12,6 @@ public class TierInit {
             7,
             20,
             TagInit.NEEDS_COOKIE_TOOL,
-            () -> Ingredient.of(ItemInit.GOLD_COOKIE::get)
-    );
-    public static final ForgeTier ICE = new ForgeTier(
-            4,
-            1800,
-            4,
-            7,
-            20,
-            TagInit.NEEDS_ICE_TOOL,
-            () -> Ingredient.of(Items.BLUE_ICE)
+            () -> Ingredient.of(ItemInit.COOKIE_INGOT::get)
     );
 }

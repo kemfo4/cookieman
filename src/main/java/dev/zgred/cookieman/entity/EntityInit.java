@@ -25,6 +25,6 @@ public final class EntityInit {
 
     static {
         ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, Cookieman.MODID);
-        OREOMAN = registerMob("oreoman", OreomanEntity::new, 0.7F, 1.3F, 2039583, 855309);
+        OREOMAN = registerMob("oreoman", OreomanEntity::new, 0.7F, 0.45F, 2039583, 855309);
     }
 }

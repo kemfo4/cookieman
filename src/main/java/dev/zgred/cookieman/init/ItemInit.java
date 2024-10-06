@@ -1,14 +1,10 @@
 package dev.zgred.cookieman.init;
 
 import dev.zgred.cookieman.Cookieman;
-import dev.zgred.cookieman.init.CustomItem.AxoArmorInit;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -32,6 +28,12 @@ public class ItemInit {
                             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 12000, 1), 1f)
                             .alwaysEat()
                             .build()))));
+
+    public static final RegistryObject<Item> COOKIE_INGOT = addToTab(ITEMS.register("cookie_ingot",
+            () -> new Item(new Item.Properties())));
+
+    public static final RegistryObject<Item> RAW_COOKIE_INGOT = addToTab(ITEMS.register("raw_cookie_ingot",
+            () -> new Item(new Item.Properties())));
 
     public static final RegistryObject<BlockItem> COOKIE_GRASS_BLOCK = addToTab(ITEMS.register("cookie_grass_block",
             () -> new BlockItem(BlockInit.COOKIE_GRASS_BLOCK.get(),
@@ -80,21 +82,6 @@ public class ItemInit {
                     TierInit.COOKIE,
                     7,
                     2.5f,
-                    new Item.Properties()
-            )));
-
-    public static final RegistryObject<SwordItem> ICE_SWORD = addToTab(ITEMS.register("ice_sword",
-            () -> new SwordItem(
-                    TierInit.ICE,
-                    7,
-                    2.5f,
-                    new Item.Properties()
-            )));
-
-    public static final RegistryObject<AxoArmorInit> AXO_HELMET = addToTab(ITEMS.register("axo_helmet",
-            () -> new AxoArmorInit(
-                    ArmorMaterialInit.AXO,
-                    ArmorItem.Type.HELMET,
                     new Item.Properties()
             )));
 

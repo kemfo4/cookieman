@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "cookieman:raw_cookie_ingot"
+    },
+    "result": "cookieman:cookie_ingot",
+    "experience": 2.1,
+    "cookingtime": 169
+}
