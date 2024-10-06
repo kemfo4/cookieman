@@ -20,9 +20,7 @@ import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
-import software.bernie.geckolib.core.animation.AnimatableManager;
-import software.bernie.geckolib.core.animation.AnimationController;
-import software.bernie.geckolib.core.animation.AnimationState;
+import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
@@ -32,8 +30,8 @@ public class OreomanEntity extends Animal implements GeoEntity {
     private final AnimatableInstanceCache geoCache = GeckoLibUtil.createInstanceCache(this);
 
 
-    public OreomanEntity(EntityType<? extends Animal> entityType, Level level) {
-        super(entityType, level);
+    public OreomanEntity(EntityType<OreomanEntity> oreomanEntityEntityType, Level level) {
+        super(oreomanEntityEntityType, level);
     }
 
     public static AttributeSupplier setAttributes() {
@@ -51,13 +49,15 @@ public class OreomanEntity extends Animal implements GeoEntity {
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
-        controllerRegistrar.add(new AnimationController<>(this, "controller", 1, this::walkAnimController));
+        controllerRegistrar.add(new AnimationController<>(this, "controller", 0, this::walkAnimController));
     }
 
     protected <E extends OreomanEntity> PlayState walkAnimController(final AnimationState<E> event) {
-        if (event.isMoving())
-        return event.setAndContinue(WALK);
+        if (event.isMoving()) {
+            return event.setAndContinue(RawAnimation.begin().then("animation.oreoman.walk", Animation.LoopType.LOOP));
+        }
 
+        event.setAnimation(RawAnimation.begin().then("animation.oreoman.idle", Animation.LoopType.LOOP));
         return PlayState.CONTINUE;
     }
 
@@ -69,6 +69,6 @@ public class OreomanEntity extends Animal implements GeoEntity {
     @Nullable
     @Override
     public AgeableMob getBreedOffspring(ServerLevel serverLevel, AgeableMob ageableMob) {
-        return null;
+        return EntityInit.OREOMAN.get().create(level());
     }
 }

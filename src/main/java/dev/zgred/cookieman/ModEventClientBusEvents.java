@@ -1,5 +1,8 @@
 package dev.zgred.cookieman;
 
+import dev.zgred.cookieman.entity.EntityInit;
+import dev.zgred.cookieman.entity.client.OreomanRenderer;
+import dev.zgred.cookieman.entity.custom.OreomanEntity;
 import dev.zgred.cookieman.init.client.armor.AxoArmorRenderer;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -12,6 +15,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import org.jetbrains.annotations.NotNull;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
+import software.bernie.geckolib.renderer.GeoEntityRenderer;
 
 import java.util.function.Consumer;
 

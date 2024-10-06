@@ -18,6 +18,6 @@ public class OreomanModel extends GeoModel<OreomanEntity> {
 
     @Override
     public ResourceLocation getAnimationResource(OreomanEntity oreomanEntity) {
-        return new ResourceLocation(Cookieman.MODID, "animations/oreoman.geo.json");
+        return new ResourceLocation(Cookieman.MODID, "animations/oreoman_idle.json");
     }
 }

@@ -1,5 +1,6 @@
 package dev.zgred.cookieman.entity;
 
+import dev.zgred.cookieman.Cookieman;
 import dev.zgred.cookieman.entity.custom.OreomanEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
@@ -23,8 +24,7 @@ public final class EntityInit {
     }
 
     static {
-        ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, "geckolib");
+        ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, Cookieman.MODID);
         OREOMAN = registerMob("oreoman", OreomanEntity::new, 0.7F, 1.3F, 2039583, 855309);
     }
 }
-
