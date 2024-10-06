@@ -9,5 +9,11 @@
   "item.cookieman.cookie_hoe":"Ciasteczkowa Motyka",
   "item.cookieman.macaroons":"Makaronik",
   "item.cookieman.raw_cookie_ingot":"Ruda ciastka",
-  "item.cookieman.cookie_ingot":"Sztabka ciastka"
+  "item.cookieman.cookie_ingot":"Sztabka ciastka",
+  "item.cookieman.honey_cookie":"Miodowe ciastko",
+  "item.cookieman.cookie_wood":"Ciastkowe drzewo",
+  "item.cookieman.cookie_sapling":"Sadzonka ciastkowego drzewa",
+  "item.cookieman.cookie_leaves":"Ciastkowe liście",
+  "item.cookieman.stripped_cookie_log":"Okorowany ciastkowy pień",
+  "item.cookieman.stripped_cookie_wood":"Okorowane ciastkowe drewno"
 }
