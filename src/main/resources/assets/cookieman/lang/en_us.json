@@ -9,5 +9,9 @@
   "item.cookieman.cookie_hoe":"Cookie Hoe",
   "item.cookieman.macaroons":"Macaroons",
   "item.cookieman.raw_cookie_ingot":"Raw cookie ingot",
-  "item.cookieman.cookie_ingot":"Cookie ingot"
+  "item.cookieman.cookie_ingot":"Cookie ingot",
+  "item.cookieman.honey_cookie":"Honey cookie",
+  "item.cookieman.cookie_wood":"Cookie wood",
+  "item.cookieman.cookie_sapling":"Cookie sapling",
+  "item.cookieman.cookie_leaves":"Cookie leaves"
 } 
