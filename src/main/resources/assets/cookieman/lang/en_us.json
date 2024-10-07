@@ -1,5 +1,20 @@
 {
   "item.cookieman.gold_cookie":"Gold Cookie",
   "block.cookieman.cookie_grass_block":"Cookie Grass Block",
-  "block.cookieman.cookie_dirt":"Cookie Dirt"
-}
+  "block.cookieman.cookie_dirt":"Cookie Dirt",
+  "item.cookieman.cookie_sword":"Cookie Sword",
+  "item.cookieman.cookie_pickaxe":"Cookie Pickaxe",
+  "item.cookieman.cookie_shovel":"Cookie Shovel",
+  "item.cookieman.cookie_axe":"Cookie Axe",
+  "item.cookieman.cookie_hoe":"Cookie Hoe",
+  "item.cookieman.macaroons":"Macaroons",
+  "item.cookieman.raw_cookie_ingot":"Raw cookie ingot",
+  "item.cookieman.cookie_ingot":"Cookie ingot",
+  "item.cookieman.honey_cookie":"Honey cookie",
+  "item.cookieman.cookie_wood":"Cookie wood",
+  "item.cookieman.cookie_sapling":"Cookie sapling",
+  "item.cookieman.cookie_leaves":"Cookie leaves",
+  "item.cookieman.stripped_cookie_log":"Stripped cookie log",
+  "item.cookieman.stripped_cookie_wood":"Stripped cookie wood",
+  "item.cookieman.cookie_god":"Cookie god"
+} 
