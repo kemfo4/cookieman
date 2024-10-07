@@ -1,6 +1,7 @@
 package dev.zgred.cookieman;
 
 import dev.zgred.cookieman.entity.EntityInit;
+import dev.zgred.cookieman.entity.client.CookiemanRenderer;
 import dev.zgred.cookieman.entity.client.OreomanRenderer;
 import dev.zgred.cookieman.init.BlockInit;
 import dev.zgred.cookieman.init.CreativeTabInit;
@@ -42,22 +43,7 @@ public class Cookieman {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(EntityInit.OREOMAN.get(), OreomanRenderer::new);
+            EntityRenderers.register(EntityInit.COOKIEMAN.get(), CookiemanRenderer::new);
         }
-    }
-    public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-        consumer.accept(new IClientItemExtensions() {
-            private GeoArmorRenderer<?> renderer;
-
-            public @NotNull GeoArmorRenderer<?> getHumanoidArmorModel(LivingEntity livingEntity, ItemStack itemStack, EquipmentSlot equipmentSlot, HumanoidModel<?> original) {
-                if (this.renderer == null)
-                    this.renderer = new AxoArmorRenderer();
-
-                // This prepares our GeoArmorRenderer for the current render frame.
-                // These parameters may be nul however, so we don't do anything further with them
-                this.renderer.prepForRender(livingEntity, itemStack, equipmentSlot, original);
-
-                return this.renderer;
-            }
-        });
     }
 }

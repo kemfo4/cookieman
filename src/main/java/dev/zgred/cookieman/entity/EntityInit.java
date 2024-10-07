@@ -1,6 +1,7 @@
 package dev.zgred.cookieman.entity;
 
 import dev.zgred.cookieman.Cookieman;
+import dev.zgred.cookieman.entity.custom.CookiemanEntity;
 import dev.zgred.cookieman.entity.custom.OreomanEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
@@ -13,6 +14,7 @@ import net.minecraftforge.registries.RegistryObject;
 public final class EntityInit {
     public static final DeferredRegister<EntityType<?>> ENTITIES;
     public static final RegistryObject<EntityType<OreomanEntity>> OREOMAN;
+    public static final RegistryObject<EntityType<CookiemanEntity>> COOKIEMAN;
     public EntityInit() {
     }
 
@@ -26,5 +28,6 @@ public final class EntityInit {
     static {
         ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, Cookieman.MODID);
         OREOMAN = registerMob("oreoman", OreomanEntity::new, 0.7F, 0.45F, 2039583, 855309);
+        COOKIEMAN = registerMob("cookieman", CookiemanEntity::new, 0.7F, 0.45F, 2039583, 855309);
     }
 }

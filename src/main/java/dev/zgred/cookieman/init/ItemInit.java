@@ -29,6 +29,16 @@ public class ItemInit {
                             .alwaysEat()
                             .build()))));
 
+    public static final RegistryObject<Item> HONEY_COOKIE = addToTab(ITEMS.register("honey_cookie",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(10)
+                            .saturationMod(.2f)
+                            .effect(() -> new MobEffectInstance(MobEffects.HEAL, 120, 5), 1f)
+                            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 12000, 5), 1f)
+                            .alwaysEat()
+                            .build()))));
+
     public static final RegistryObject<Item> COOKIE_INGOT = addToTab(ITEMS.register("cookie_ingot",
             () -> new Item(new Item.Properties())));
 

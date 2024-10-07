@@ -19,14 +19,12 @@ import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
-import static software.bernie.geckolib.constant.DefaultAnimations.WALK;
-
-public class OreomanEntity extends Animal implements GeoEntity {
+public class CookiemanEntity extends Animal implements GeoEntity {
     private final AnimatableInstanceCache geoCache = GeckoLibUtil.createInstanceCache(this);
 
 
-    public OreomanEntity(EntityType<OreomanEntity> oreomanEntityEntityType, Level level) {
-        super(oreomanEntityEntityType, level);
+    public CookiemanEntity(EntityType<CookiemanEntity> cookiemanEntityEntityType, Level level) {
+        super(cookiemanEntityEntityType, level);
     }
 
     public static AttributeSupplier setAttributes() {
@@ -47,12 +45,12 @@ public class OreomanEntity extends Animal implements GeoEntity {
         controllerRegistrar.add(new AnimationController<>(this, "controller", 0, this::walkAnimController));
     }
 
-    protected <E extends OreomanEntity> PlayState walkAnimController(final AnimationState<E> event) {
+    protected <E extends CookiemanEntity> PlayState walkAnimController(final AnimationState<E> event) {
         if (event.isMoving()) {
-            return event.setAndContinue(RawAnimation.begin().then("animation.oreoman.walk", Animation.LoopType.LOOP));
+            return event.setAndContinue(RawAnimation.begin().then("animation.cookieman.walk", Animation.LoopType.LOOP));
         }
 
-        event.setAnimation(RawAnimation.begin().then("animation.oreoman.idle", Animation.LoopType.LOOP));
+        event.setAnimation(RawAnimation.begin().then("animation.cookieman.idle", Animation.LoopType.LOOP));
         return PlayState.CONTINUE;
     }
 
@@ -64,6 +62,6 @@ public class OreomanEntity extends Animal implements GeoEntity {
     @Nullable
     @Override
     public AgeableMob getBreedOffspring(ServerLevel serverLevel, AgeableMob ageableMob) {
-        return EntityInit.OREOMAN.get().create(level());
+        return EntityInit.COOKIEMAN.get().create(level());
     }
 }

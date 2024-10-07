@@ -12,5 +12,6 @@ public class ModEvents {
     @SubscribeEvent
     public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
         event.put(EntityInit.OREOMAN.get(), OreomanEntity.setAttributes());
+        event.put(EntityInit.COOKIEMAN.get(), OreomanEntity.setAttributes());
     }
 }
