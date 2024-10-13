@@ -80,16 +80,6 @@ public class ItemInit {
                     new Item.Properties()
                             .rarity(Rarity.COMMON))));
     
-    public static final RegistryObject<BlockItem> OREO_GRASS_BLOCK = addToTab(ITEMS.register("oreo_grass_block",
-            () -> new BlockItem(BlockInit.OREO_GRASS_BLOCK.get(),
-                    new Item.Properties()
-                            .rarity(Rarity.COMMON))));
-
-    public static final RegistryObject<BlockItem> OREO_DIRT = addToTab(ITEMS.register("oreo_dirt",
-            () -> new BlockItem(BlockInit.OREO_DIRT.get(),
-                    new Item.Properties()
-                            .rarity(Rarity.COMMON))));
-    
     public static final RegistryObject<SwordItem> COOKIE_SWORD = addToTab(ITEMS.register("cookie_sword",
             () -> new SwordItem(
                     TierInit.COOKIE,
