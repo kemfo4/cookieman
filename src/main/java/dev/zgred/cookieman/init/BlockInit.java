@@ -59,18 +59,4 @@ public class BlockInit {
                     .strength(10.0f)
                     .dynamicShape()
                     .forceSolidOn()));
-
-    public static final RegistryObject<Block> OREO_DIRT = BLOCKS.register( "oreo_dirt",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.STONE)
-                    .strength(0.9f)
-                    .dynamicShape()
-                    .forceSolidOn()));
-
-    public static final RegistryObject<Block> OREO_GRASS_BLOCK = BLOCKS.register( "oreo_grass_block",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.STONE)
-                    .strength(0.9f)
-                    .dynamicShape()
-                    .forceSolidOn()));
 }
