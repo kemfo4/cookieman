@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "y": {
+      "model": "cookieman:block/cookie_log"
+    },
+    "x": {
+      "model": "cookieman:block/cookie_log",
+      "y": 90
+    },
+    "z": {
+      "model": "cookieman:block/cookie_log",
+      "y": 180
+    }
+  }
+}
