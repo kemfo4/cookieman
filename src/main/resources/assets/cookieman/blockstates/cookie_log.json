@@ -9,7 +9,8 @@
     },
     "z": {
       "model": "cookieman:block/cookie_log",
-      "y": 180
+      "y": 90,
+      "x": 90
     }
   }
 }
