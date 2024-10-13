@@ -55,6 +55,41 @@ public class ItemInit {
                     new Item.Properties()
                             .rarity(Rarity.COMMON))));
 
+    public static final RegistryObject<BlockItem> COOKIE_STONE = addToTab(ITEMS.register("cookie_stone",
+            () -> new BlockItem(BlockInit.COOKIE_STONE.get(),
+                    new Item.Properties()
+                            .rarity(Rarity.COMMON))));
+
+    public static final RegistryObject<BlockItem> COOKIE_LOG = addToTab(ITEMS.register("cookie_log",
+            () -> new BlockItem(BlockInit.COOKIE_LOG.get(),
+                    new Item.Properties()
+                            .rarity(Rarity.COMMON))));
+
+    public static final RegistryObject<BlockItem> COOKIE_WOOD = addToTab(ITEMS.register("cookie_wood",
+            () -> new BlockItem(BlockInit.COOKIE_WOOD.get(),
+                    new Item.Properties()
+                            .rarity(Rarity.COMMON))));
+
+    public static final RegistryObject<BlockItem> COOKIE_LEAVES = addToTab(ITEMS.register("cookie_leaves",
+            () -> new BlockItem(BlockInit.COOKIE_LEAVES.get(),
+                    new Item.Properties()
+                            .rarity(Rarity.COMMON))));
+    
+    public static final RegistryObject<BlockItem> OREO_STONE = addToTab(ITEMS.register("oreo_stone",
+            () -> new BlockItem(BlockInit.OREO_STONE.get(),
+                    new Item.Properties()
+                            .rarity(Rarity.COMMON))));
+    
+    public static final RegistryObject<BlockItem> OREO_GRASS_BLOCK = addToTab(ITEMS.register("oreo_grass_block",
+            () -> new BlockItem(BlockInit.OREO_GRASS_BLOCK.get(),
+                    new Item.Properties()
+                            .rarity(Rarity.COMMON))));
+
+    public static final RegistryObject<BlockItem> OREO_DIRT = addToTab(ITEMS.register("oreo_dirt",
+            () -> new BlockItem(BlockInit.OREO_DIRT.get(),
+                    new Item.Properties()
+                            .rarity(Rarity.COMMON))));
+    
     public static final RegistryObject<SwordItem> COOKIE_SWORD = addToTab(ITEMS.register("cookie_sword",
             () -> new SwordItem(
                     TierInit.COOKIE,
