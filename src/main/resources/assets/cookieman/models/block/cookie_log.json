@@ -1,12 +1,7 @@
 {
-  "parent": "minecraft:block/cube",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "particle": "cookieman:block/cookie_dirt",
-    "down": "cookieman:block/cookie_grass_block/cookie_grass_block_down",
-    "up": "cookieman:block/cookie_grass_block/cookie_grass_block_up",
-    "north": "cookieman:block/cookie_grass_block/cookie_grass_block_front",
-    "east": "cookieman:block/cookie_grass_block/cookie_grass_block_front",
-    "south": "cookieman:block/cookie_grass_block/cookie_grass_block_front",
-    "west": "cookieman:block/cookie_grass_block/cookie_grass_block_front"
+    "end": "cookieman:cookie_log/cookie_log_end",
+    "side": "cookieman:cookie_log/cookie_log_front"
   }
 }
