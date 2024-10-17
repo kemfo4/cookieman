@@ -19,5 +19,8 @@
   "item.cookieman.cookie_god":"Cookie god",
   "block.cookieman.cookie_log":"Cookie log",
   "block.cookieman.cookie_stone":"Cookie stone",
-  "block.cookieman.oreo_stone":"Oreo stone"
+  "block.cookieman.oreo_stone":"Oreo stone",
+  "item.cookieman.pumpkin_cookie":"Pumpkin cookie",
+  "item.cookieman.oatmeal_cookie":"Oatmeal cookie",
+  "item.cookieman.coofie_cookie":"Cooffe cookie"
 } 
