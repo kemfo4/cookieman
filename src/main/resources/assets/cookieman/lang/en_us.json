@@ -11,13 +11,13 @@
   "item.cookieman.raw_cookie_ingot":"Raw cookie ingot",
   "item.cookieman.cookie_ingot":"Cookie ingot",
   "item.cookieman.honey_cookie":"Honey cookie",
-  "item.cookieman.cookie_wood":"Cookie wood",
+  "block.cookieman.cookie_wood":"Cookie wood",
   "item.cookieman.cookie_sapling":"Cookie sapling",
   "item.cookieman.cookie_leaves":"Cookie leaves",
-  "item.cookieman.stripped_cookie_log":"Stripped cookie log",
-  "item.cookieman.stripped_cookie_wood":"Stripped cookie wood",
+  "block.cookieman.stripped_cookie_log":"Stripped cookie log",
+  "block.cookieman.stripped_cookie_wood":"Stripped cookie wood",
   "item.cookieman.cookie_god":"Cookie god",
-  "item.cookieman.cookie_log":"Cookie log",
-  "item.cookieman.cookie_stone":"Cookie stone",
-  "item.cookieman.oreo_stone":"Oreo stone"
+  "block.cookieman.cookie_log":"Cookie log",
+  "block.cookieman.cookie_stone":"Cookie stone",
+  "block.cookieman.oreo_stone":"Oreo stone"
 } 
