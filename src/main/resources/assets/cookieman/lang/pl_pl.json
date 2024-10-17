@@ -19,5 +19,8 @@
   "item.cookieman.cookie_god":"Ciastko boga",
   "block.cookieman.cookie_log":"Ciastkowy pień",
   "block.cookieman.cookie_stone":"Ciastkowy kamień",
-  "block.cookieman.oreo_stone":"Kamień oreo"
+  "block.cookieman.oreo_stone":"Kamień oreo",
+  "item.cookieman.pumpkin_cookie":"Ciastko dyniowe",
+  "item.cookieman.oatmeal_cookie":"Ciastko owsiane",
+  "item.cookieman.coofie_cookie":"Ciastko kawowe"
 }
