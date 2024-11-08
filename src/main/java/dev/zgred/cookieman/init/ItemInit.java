@@ -60,6 +60,21 @@ public class ItemInit {
                     new Item.Properties()
                             .rarity(Rarity.COMMON))));
 
+    public static final RegistryObject<BlockItem> COOKIE_COBBLESTONE = addToTab(ITEMS.register("cookie_cobblestone",
+            () -> new BlockItem(BlockInit.COOKIE_COBBLESTONE.get(),
+                    new Item.Properties()
+                            .rarity(Rarity.COMMON))));
+
+    public static final RegistryObject<BlockItem> COOKIE_STONE_BRICKS = addToTab(ITEMS.register("cookie_stone_bricks",
+            () -> new BlockItem(BlockInit.COOKIE_STONE_BRICKS.get(),
+                    new Item.Properties()
+                            .rarity(Rarity.COMMON))));
+
+    public static final RegistryObject<BlockItem> COOKIE_PLANKS = addToTab(ITEMS.register("cookie_planks",
+            () -> new BlockItem(BlockInit.COOKIE_PLANKS.get(),
+                    new Item.Properties()
+                            .rarity(Rarity.COMMON))));
+
     public static final RegistryObject<BlockItem> COOKIE_LOG = addToTab(ITEMS.register("cookie_log",
             () -> new BlockItem(BlockInit.COOKIE_LOG.get(),
                     new Item.Properties()
@@ -77,6 +92,11 @@ public class ItemInit {
     
     public static final RegistryObject<BlockItem> OREO_STONE = addToTab(ITEMS.register("oreo_stone",
             () -> new BlockItem(BlockInit.OREO_STONE.get(),
+                    new Item.Properties()
+                            .rarity(Rarity.COMMON))));
+
+    public static final RegistryObject<BlockItem> OREO_COBBLESTONE = addToTab(ITEMS.register("oreo_cobblestone",
+            () -> new BlockItem(BlockInit.OREO_COBBLESTONE.get(),
                     new Item.Properties()
                             .rarity(Rarity.COMMON))));
     

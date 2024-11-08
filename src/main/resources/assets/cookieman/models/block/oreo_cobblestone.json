@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "cookieman:block/oreo_stone"
+    "all": "cookieman:block/oreo_cobblestone"
   }
 }

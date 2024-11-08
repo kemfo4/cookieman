@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ciastkoludek:items/iron_cookie_knife"
+    "layer0": "cookieman:items/iron_cookie_knife"
   }
 }

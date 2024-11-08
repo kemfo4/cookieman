@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ciastkoludek:blocks/cookie_sapling"
+    "layer0": "cookieman:blocks/cookie_sapling"
   }
 }
