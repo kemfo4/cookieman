@@ -24,4 +24,10 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(Cookieman.MODID, "item/" + item.getId().getPath()));
     }
+
+    private ItemModelBuilder handheld(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(Cookieman.MODID, "item/" + item.getId().getPath()));
+    }
 }
