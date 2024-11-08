@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "cookieman:cookie_log/cookie_log_end",
-    "side": "cookieman:cookie_log/cookie_log_front"
+    "end": "cookieman:block/cookie_log/cookie_log_end",
+    "side": "cookieman:block/cookie_log/cookie_log_front"
   }
 }

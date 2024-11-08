@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/leaves",
+  "ambientocclusion": true,
+  "textures": {
+    "all": "cookieman:block/cookie_leaves"
+  }
+}
