@@ -17,6 +17,15 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
     @Override
     protected void registerModels() {
         simpleItem(ItemInit.COOKIE_INGOT);
+        handheld(ItemInit.COOKIE_AXE);
+        handheld(ItemInit.COOKIE_HOE);
+        handheld(ItemInit.COOKIE_PICKAXE);
+        handheld(ItemInit.COOKIE_SHOVEL);
+        handheld(ItemInit.COOKIE_SWORD);
+        simpleItem(ItemInit.GOLD_COOKIE);
+        simpleItem(ItemInit.HONEY_COOKIE);
+        simpleItem(ItemInit.MACAROONS);
+        simpleItem(ItemInit.RAW_COOKIE_INGOT);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
