@@ -19,6 +19,6 @@ public class BlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(TagInit.NEEDS_COOKIE_TOOL)
-                .add(BlockInit.COOKIE_COBBLESTONE.get(), BlockInit.COOKIE_STONE.get(), BlockInit.COOKIE_STONE_BRICKS.get(), BlockInit.OREO_STONE.get(), BlockInit.OREO_COBBLESTONE.get())
+                .add(BlockInit.COOKIE_COBBLESTONE.get(), BlockInit.COOKIE_STONE.get(), BlockInit.COOKIE_STONE_BRICKS.get(), BlockInit.OREO_STONE.get(), BlockInit.OREO_COBBLESTONE.get());
     }
 }
