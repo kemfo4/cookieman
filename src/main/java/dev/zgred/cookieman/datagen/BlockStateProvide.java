@@ -16,6 +16,7 @@ public class BlockStateProvide extends BlockStateProvider {
     protected void registerStatesAndModels() {
         cubeallWithItem(BlockInit.COOKIE_DIRT);
         cubeallWithItem(BlockInit.COOKIE_COBBLESTONE);
+        cubeallWithItem(BlockInit.COOKIE_STONE);
         cubeallWithItem(BlockInit.COOKIE_STONE_BRICKS);
         cubeallWithItem(BlockInit.COOKIE_WOOD);
         cubeallWithItem(BlockInit.OREO_COBBLESTONE);
@@ -24,6 +25,10 @@ public class BlockStateProvide extends BlockStateProvider {
     }
 
     private void cubeallWithItem(RegistryObject<Block> blockRegistryObject) {
+        simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
+    }
+
+    private void cubeWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 }

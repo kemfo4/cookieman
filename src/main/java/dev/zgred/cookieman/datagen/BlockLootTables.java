@@ -37,7 +37,7 @@ public class BlockLootTables extends BlockLootSubProvider {
                 block -> createSingleItemTableWithSilkTouch(BlockInit.COOKIE_GRASS_BLOCK.get(), BlockInit.COOKIE_DIRT.get()));
 
         this.add(BlockInit.COOKIE_LEAVES.get(),
-                block -> createSilkTouchOrShearsDispatchTable(BlockInit.COOKIE_LEAVES.get(), BlockInit.COOKIE_SAPLING HAS_SHEARS));
+                block -> createSingleItemTableWithSilkTouch(BlockInit.COOKIE_LEAVES.get(), BlockInit.COOKIE_SAPLING.get()));
     }
 
     protected Iterable<Block> getKnownBlocks() {

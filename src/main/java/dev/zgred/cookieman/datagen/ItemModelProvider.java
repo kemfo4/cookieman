@@ -17,46 +17,47 @@ public class ItemModelProvider extends net.minecraftforge.client.model.generator
     @Override
     protected void registerModels() {
         simpleItem(ItemInit.COOKIE_INGOT);
+        simpleItem(ItemInit.GOLD_COOKIE);
+        simpleItem(ItemInit.HONEY_COOKIE);
+        simpleItem(ItemInit.MACAROONS);
+        simpleItem(ItemInit.RAW_COOKIE_INGOT);
+
         handheldaxe(ItemInit.COOKIE_AXE);
         handheldhoe(ItemInit.COOKIE_HOE);
         handheldpickaxe(ItemInit.COOKIE_PICKAXE);
         handheldshovel(ItemInit.COOKIE_SHOVEL);
         handheldsword(ItemInit.COOKIE_SWORD);
-        simpleItem(ItemInit.GOLD_COOKIE);
-        simpleItem(ItemInit.HONEY_COOKIE);
-        simpleItem(ItemInit.MACAROONS);
-        simpleItem(ItemInit.RAW_COOKIE_INGOT);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(Cookieman.MODID, "items/" + item.getId().getPath()));
+                new ResourceLocation(Cookieman.MODID, "item/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder handheldaxe(RegistryObject<AxeItem> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/handheld")).texture("layer0",
-                new ResourceLocation(Cookieman.MODID, "items" + item.getId().getPath()));
+                new ResourceLocation(Cookieman.MODID, "item/" + item.getId().getPath()));
     }
     private ItemModelBuilder handheldhoe(RegistryObject<HoeItem> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/handheld")).texture("layer0",
-                new ResourceLocation(Cookieman.MODID, "items" + item.getId().getPath()));
+                new ResourceLocation(Cookieman.MODID, "item/" + item.getId().getPath()));
     }
     private ItemModelBuilder handheldpickaxe(RegistryObject<PickaxeItem> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/handheld")).texture("layer0",
-                new ResourceLocation(Cookieman.MODID, "items" + item.getId().getPath()));
+                new ResourceLocation(Cookieman.MODID, "item/" + item.getId().getPath()));
     }
     private ItemModelBuilder handheldshovel(RegistryObject<ShovelItem> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/handheld")).texture("layer0",
-                new ResourceLocation(Cookieman.MODID, "items" + item.getId().getPath()));
+                new ResourceLocation(Cookieman.MODID, "item/" + item.getId().getPath()));
     }
     private ItemModelBuilder handheldsword(RegistryObject<SwordItem> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/handheld")).texture("layer0",
-                new ResourceLocation(Cookieman.MODID, "items/" + item.getKey()));
+                new ResourceLocation(Cookieman.MODID, "item/" + item.getId().getPath()));
     }
 }
