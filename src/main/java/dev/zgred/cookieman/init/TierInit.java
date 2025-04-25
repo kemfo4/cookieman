@@ -8,9 +8,9 @@ public class TierInit {
     public static final ForgeTier COOKIE = new ForgeTier(
             4,
             1800,
+            2,
+            2,
             4,
-            7,
-            20,
             TagInit.NEEDS_COOKIE_TOOL,
             () -> Ingredient.of(ItemInit.COOKIE_INGOT::get)
     );

@@ -155,40 +155,40 @@ public class ItemInit {
     public static final RegistryObject<SwordItem> COOKIE_SWORD = addToTab(ITEMS.register("cookie_sword",
             () -> new SwordItem(
                     TierInit.COOKIE,
-                    7,
-                    2.5f,
+                    3,
+                    1.5f,
                     new Item.Properties()
             )));
 
     public static final RegistryObject<PickaxeItem> COOKIE_PICKAXE = addToTab(ITEMS.register("cookie_pickaxe",
             () -> new PickaxeItem(
                     TierInit.COOKIE,
-                    7,
-                    2.5f,
+                    3,
+                    1.5f,
                     new Item.Properties()
             )));
 
     public static final RegistryObject<ShovelItem> COOKIE_SHOVEL = addToTab(ITEMS.register("cookie_shovel",
             () -> new ShovelItem(
                     TierInit.COOKIE,
-                    7,
-                    2.5f,
+                    3,
+                    1.5f,
                     new Item.Properties()
             )));
 
     public static final RegistryObject<AxeItem> COOKIE_AXE = addToTab(ITEMS.register("cookie_axe",
             () -> new AxeItem(
                     TierInit.COOKIE,
-                    7,
-                    2.5f,
+                    3,
+                    1.5f,
                     new Item.Properties()
             )));
 
     public static final RegistryObject<HoeItem> COOKIE_HOE = addToTab(ITEMS.register("cookie_hoe",
             () -> new HoeItem(
                     TierInit.COOKIE,
-                    7,
-                    2.5f,
+                    3,
+                    1.5f,
                     new Item.Properties()
             )));
 
