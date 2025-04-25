@@ -29,6 +29,58 @@ public class ItemInit {
                             .alwaysEat()
                             .build()))));
 
+    public static final RegistryObject<Item> GINGERBREAD = addToTab(ITEMS.register("gingerbread",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(3)
+                            .saturationMod(.1f)
+                            .alwaysEat()
+                            .build()))));
+
+    public static final RegistryObject<Item> GELATINE = addToTab(ITEMS.register("gelatine",
+            () -> new Item(new Item.Properties())));
+
+    public static final RegistryObject<Item> JELLY = addToTab(ITEMS.register("jelly",
+            () -> new Item(new Item.Properties())));
+
+    public static final RegistryObject<Item> DELICJE = addToTab(ITEMS.register("delicje",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(2)
+                            .saturationMod(.3f)
+                            .alwaysEat()
+                            .build()))));
+
+    public static final RegistryObject<Item> BUTTER_COOKIES  = addToTab(ITEMS.register("butter_cookies",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(5)
+                            .saturationMod(.3f)
+                            .alwaysEat()
+                            .build()))));
+
+    public static final RegistryObject<Item> BUTTER = addToTab(ITEMS.register("butter",
+            () -> new Item(new Item.Properties())));
+
+    public static final RegistryObject<Item> CHOCOLATE = addToTab(ITEMS.register("chocolate",
+            () -> new Item(new Item.Properties())));
+
+    public static final RegistryObject<Item> CHOCOLATE_COOKIES = addToTab(ITEMS.register("chocolate_cookies",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(4)
+                            .saturationMod(.3f)
+                            .alwaysEat()
+                            .build()))));
+
+    public static final RegistryObject<Item> PINE_CONE_COOKIES = addToTab(ITEMS.register("gingerbread",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(3)
+                            .saturationMod(.1f)
+                            .alwaysEat()
+                            .build()))));
+
     public static final RegistryObject<Item> HONEY_COOKIE = addToTab(ITEMS.register("honey_cookie",
             () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder()
@@ -55,13 +107,13 @@ public class ItemInit {
                     new Item.Properties()
                             .rarity(Rarity.COMMON))));
 
-    public static final RegistryObject<BlockItem> COOKIE_STONE = addToTab(ITEMS.register("cookie_stone",
-            () -> new BlockItem(BlockInit.COOKIE_STONE.get(),
+    public static final RegistryObject<BlockItem> COOKIE_COBBLESTONE = addToTab(ITEMS.register("cookie_cobblestone",
+            () -> new BlockItem(BlockInit.COOKIE_COBBLESTONE.get(),
                     new Item.Properties()
                             .rarity(Rarity.COMMON))));
 
-    public static final RegistryObject<BlockItem> COOKIE_COBBLESTONE = addToTab(ITEMS.register("cookie_cobblestone",
-            () -> new BlockItem(BlockInit.COOKIE_COBBLESTONE.get(),
+    public static final RegistryObject<BlockItem> COOKIE_STONE = addToTab(ITEMS.register("cookie_stone",
+            () -> new BlockItem(BlockInit.COOKIE_STONE.get(),
                     new Item.Properties()
                             .rarity(Rarity.COMMON))));
 
