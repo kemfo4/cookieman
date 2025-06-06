@@ -21,6 +21,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 import net.minecraftforge.common.data.DatapackBuiltinEntriesProvider;
+import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -34,6 +35,7 @@ import terrablender.api.Region;
 import terrablender.api.RegionType;
 import terrablender.api.Regions;
 import terrablender.api.SurfaceRuleManager;
+import dev.zgred.cookieman.datagen.DataGenerators;
 
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
@@ -77,16 +79,7 @@ public class Cookieman {
         });
     }
 
-    public class DatapackProvider extends DatapackBuiltinEntriesProvider {
-        public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
-                .add(Registries.DIMENSION_TYPE, CookieWorld::bootstrapType)
-                .add(Registries.BIOME, CookieBiomes::boostrap)
-                .add(Registries.LEVEL_STEM, CookieWorld::bootstrapStem)
-                .add(ForgeRegistries.Keys.BIOME_MODIFIERS, BiomeModifi::bootstrap);
-
-
-        public DatapackProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries, Set<String> modIds) {
-            super(output, registries, BUILDER, Set.of(Cookieman.MODID));
-        }
+    public void DataGen(GatherDataEvent event) {
+        DataGenerators.gatherData(event);
     }
 }

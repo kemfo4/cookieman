@@ -65,7 +65,7 @@ public class ItemInit {
     public static final RegistryObject<Item> CHOCOLATE = addToTab(ITEMS.register("chocolate",
             () -> new Item(new Item.Properties())));
 
-    public static final RegistryObject<Item> CHOCOLATE_COOKIES = addToTab(ITEMS.register("chocolate_cookies",
+    public static final RegistryObject<Item> CHOCOLATE_COOKIE = addToTab(ITEMS.register("chocolate_cookie",
             () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder()
                             .nutrition(4)
@@ -73,7 +73,7 @@ public class ItemInit {
                             .alwaysEat()
                             .build()))));
 
-    public static final RegistryObject<Item> PINE_CONE_COOKIES = addToTab(ITEMS.register("gingerbread",
+    public static final RegistryObject<Item> PINE_CONE_COOKIE = addToTab(ITEMS.register("pine_cone_cookie",
             () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder()
                             .nutrition(3)

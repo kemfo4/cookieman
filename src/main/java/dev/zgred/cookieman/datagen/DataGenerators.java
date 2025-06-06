@@ -1,6 +1,7 @@
 package dev.zgred.cookieman.datagen;
 
 import dev.zgred.cookieman.Cookieman;
+import dev.zgred.cookieman.worldgen.WorldProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -9,6 +10,7 @@ import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
+import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 @Mod.EventBusSubscriber(modid = Cookieman.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -21,7 +23,7 @@ public class DataGenerators {
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
         generator.addProvider(event.includeServer(), LootTableProvide.create(packOutput));
-
+        generator.addProvider(event.includeServer(), new WorldProvider(packOutput, lookupProvider, Set.of(Cookieman.MODID)));
         generator.addProvider(event.includeClient(), new BlockStateProvide(packOutput, Cookieman.MODID, existingFileHelper));
         generator.addProvider(event.includeClient(), new ItemModelProvider(packOutput, Cookieman.MODID ,existingFileHelper));
 
